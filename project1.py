@@ -26,7 +26,7 @@ def save_to_database(text, conn):
     finally:
         cursor.close()
 try:
-    conn = sql.connect(host='localhost', user='root', passwd='rohan@2006', database='speech')
+    conn = sql.connect(host='localhost', user='root', passwd='', database='speech')
     recognizer = sr.Recognizer()
     with sr.Microphone() as source:
         print("Speak something...")
